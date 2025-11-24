@@ -1,0 +1,68 @@
+
+
+header
+{
+  display: flex;
+  align-items: center; /* Vertically centers the items */
+
+}
+
+ul{
+  list-style-type: none;
+  
+}
+
+.logo
+{
+  margin-right: auto;
+}
+
+.nav-links
+{
+  margin-left: auto;
+  display: flex;
+  gap: 30px;
+}
+
+.logo a,
+.nav-links a {
+    /* Removes the underline */
+    text-decoration: none; 
+    /* Changes the default blue link color */
+    color: darkblue; 
+}
+
+.banner {
+  height: 300px;
+  background-color: lightgray;
+  justify-content: center; /*Centers content horizontally*/
+
+}
+
+.titleone{
+  text-align: center;
+  /* padding-top: 100px; */
+}
+
+.titleone div:first-child {
+  /* Targets: <div>TITLE</div> */
+  border: 1px solid rgb(5, 117, 155);
+  width: 100px;
+  margin-left: 190px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.titleone div:nth-child(2)
+{
+  border: 1px solid rgb(155, 5, 5);
+  width: 100px;
+  margin-left: 190px;
+}
+
+.titleone div:nth-child(3)
+{
+  border: 1px solid rgb(5, 155, 67);
+  width: 100px;
+  margin-left: 190px;
+}
