@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smile School - Get Schooled (Final Wireframe)</title>
+    <!-- Importing a modern font similar to the screenshot design (e.g., Montserrat) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="schooled.css" />
+    <!-- Tailwind CSS is not strictly needed since schooled.css is present, but kept for robust environments -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- TOP NAV -->
+    <header class="section nav">
+        <!-- Logo with SVG/Icon -->
+        <div class="logo">
+            <svg class="smile-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                <circle cx="8" cy="10" r="1.5"/>
+                <circle cx="16" cy="10" r="1.5"/>
+                <path d="M12 16c-2 0-3.5 1-4.5 1.5.5-2 1.5-4 4.5-4s4 2 4.5 4c-1-.5-2.5-1.5-4.5-1.5z"/>
+            </svg>
+            SmileSchool
+        </div>
+        <div class="links">
+            <a href="#">COURSES</a>
+            <a href="#">PRICING</a>
+            <a href="#">LOGIN</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (Get Schooled) -->
+    <section class="section hero">
+        <div class="hero-box">
+            <h1 class="title">Get schooled</h1>
+            <div class="sub-links">
+                <a href="#">SMILES</a>
+                <a href="#">GRIN</a>
+                <a href="#">LAUGH</a>
+            </div>
+            <button class="btn">Register For Free</button>
+            <p class="section-subtitle">Learn from the pros</p>
+        </div>
+    </section>
+
+    <!-- GRID SECTION (Experts/The Crew) - Now populated with content -->
+    <section class="section grid-4 crew">
+        <div class="grid">
+            <div class="card">
+                <div class="img" style="background-image: url('https://placehold.co/150x150/505050/FFFFFF?text=P.M');"></div>
+                <p>Phillip Massey</p>
+                <p class="sub">Smile of the year - 2018-2019</p>
+            </div>
+            <div class="card">
+                <div class="img" style="background-image: url('https://placehold.co/150x150/505050/FFFFFF?text=N.L');"></div>
+                <p>Nannie Lawrence</p>
+                <p class="sub">Best 'little smile' - 2017</p>
+            </div>
+            <div class="card">
+                <div class="img" style="background-image: url('https://placehold.co/150x150/505050/FFFFFF?text=B.W');"></div>
+                <p>Bruce Walters</p>
+                <p class="sub">Best 'Friend Smile' - 2018</p>
+            </div>
+            <div class="card">
+                <div class="img" style="background-image: url('https://placehold.co/150x150/505050/FFFFFF?text=H.H');"></div>
+                <p>Henry Hughes</p>
+                <p class="sub">24h smiles - 2016</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUOTE SECTION -->
+    <section class="section quote">
+        <!-- Re-structured to match the two-column layout previously implemented -->
+        <div class="quote-content">
+            <div class="quote-img" style="background-image: url('https://placehold.co/150x150/FFFFFF/505050?text=Author');"></div>
+            <div class="quote-text-box">
+                <p class="quote-text">
+                    “Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun!”
+                </p>
+                <p class="author">Person Name</p>
+                <p class="sub">weather presenter</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MULTI-ROW IMAGE/TEXT GRID (Popular Tutorials) -->
+    <section class="section tutorials">
+        <h2 class="section-title">Most <span class="highlight">popular</span> tutorials</h2>
+        <div class="grid grid-4">
+            <!-- Card 1 -->
+            <div class="card video-card">
+                <div class="img" style="background-image: url('https://placehold.co/300x200/555555/FFFFFF?text=Video+1');"></div>
+                <div class="card-body">
+                    <p class="card-title">Diagonal Smile</p>
+                    <p class="card-sub">Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+                    <div class="author-row">
+                        <img class="author-img" src="https://placehold.co/30x30/AAAAAA/FFFFFF?text=A" alt="Author">
+                        <p class="author-name">Phillip Massey</p>
+                    </div>
+                    <div class="rating-row">
+                        <div class="stars">
+                            <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star empty">★</span>
+                        </div>
+                        <span class="duration">8 min</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+             <div class="card video-card">
+                <div class="img" style="background-image: url('https://placehold.co/300x200/555555/FFFFFF?text=Video+2');"></div>
+                <div class="card-body">
+                    <p class="card-title">Sad Smile</p>
+                    <p class="card-sub">Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+                    <div class="author-row">
+                        <img class="author-img" src="https://placehold.co/30x30/AAAAAA/FFFFFF?text=A" alt="Author">
+                        <p class="author-name">Phillip Massey</p>
+                    </div>
+                    <div class="rating-row">
+                        <div class="stars">
+                            <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star empty">★</span><span class="star empty">★</span>
+                        </div>
+                        <span class="duration">6 min</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+             <div class="card video-card">
+                <div class="img" style="background-image: url('https://placehold.co/300x200/555555/FFFFFF?text=Video+3');"></div>
+                <div class="card-body">
+                    <p class="card-title">Natural Smile</p>
+                    <p class="card-sub">Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+                    <div class="author-row">
+                        <img class="author-img" src="https://placehold.co/30x30/AAAAAA/FFFFFF?text=A" alt="Author">
+                        <p class="author-name">Phillip Massey</p>
+                    </div>
+                    <div class="rating-row">
+                        <div class="stars">
+                            <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span>
+                        </div>
+                        <span class="duration">9 min</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+             <div class="card video-card">
+                <div class="img" style="background-image: url('https://placehold.co/300x200/555555/FFFFFF?text=Video+4');"></div>
+                <div class="card-body">
+                    <p class="card-title">Happy Smile</p>
+                    <p class="card-sub">Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+                    <div class="author-row">
+                        <img class="author-img" src="https://placehold.co/30x30/AAAAAA/FFFFFF?text=A" alt="Author">
+                        <p class="author-name">Phillip Massey</p>
+                    </div>
+                    <div class="rating-row">
+                        <div class="stars">
+                            <span class="star filled">★</span><span class="star filled">★</span><span class="star empty">★</span><span class="star empty">★</span><span class="star empty">★</span>
+                        </div>
+                        <span class="duration">4 min</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 COLUMN GRID (Free Membership) - Adjusted to grid-4 to match content -->
+    <section class="section dark-section membership">
+        <h2 class="section-title">Free membership</h2>
+        <div class="grid grid-4">
+            <div class="membership-box">
+                <div class="icon">😊</div>
+                <p>Lorem ipsum</p>
+                <p class="sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="membership-box">
+                <div class="icon">😊</div>
+                <p>Lorem ipsum</p>
+                <p class="sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="membership-box">
+                <div class="icon">😊</div>
+                <p>Lorem ipsum</p>
+                <p class="sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="membership-box">
+                <div class="icon">😊</div>
+                <p>Lorem ipsum</p>
+                <p class="sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="section cta cta-center dark-section">
+        <button class="btn large-btn">REGISTER TO CONNECT</button>
+    </section>
+
+    <!-- TEXT GRID SECTION (F.A.Q.) -->
+    <section class="section faq">
+        <h2 class="section-title">F.A.Q.</h2>
+
+        <div class="grid-2 faq-grid">
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+                <h3 class="faq-question">How does this work?</h3>
+                <p class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum lorem sed ipsum.</p>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+                <h3 class="faq-question">How does this work?</h3>
+                <p class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum lorem sed ipsum.</p>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+                <h3 class="faq-question">How does this work?</h3>
+                <p class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum lorem sed ipsum.</p>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+                <h3 class="faq-question">How does this work?</h3>
+                <p class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum lorem sed ipsum.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="section footer dark-section">
+        <div class="footer-row">
+            <div class="logo">
+                 <svg class="smile-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                    <circle cx="8" cy="10" r="1.5"/>
+                    <circle cx="16" cy="10" r="1.5"/>
+                    <path d="M12 16c-2 0-3.5 1-4.5 1.5.5-2 1.5-4 4.5-4s4 2 4.5 4c-1-.5-2.5-1.5-4.5-1.5z"/>
+                </svg>
+                SmileSchool
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="https://placehold.co/24x24/FFFFFF/000000?text=F" alt="Facebook"></a>
+                <a href="#"><img src="https://placehold.co/24x24/FFFFFF/000000?text=T" alt="Twitter"></a>
+                <a href="#"><img src="https://placehold.co/24x24/FFFFFF/000000?text=I" alt="Instagram"></a>
+            </div>
+        </div>
+
+        <p class="center-text">© 2020 SmileSchool. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

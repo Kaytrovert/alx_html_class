@@ -1,0 +1,603 @@
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+} */
+
+/* Generic section container */
+/* .section {
+    padding: 30px;
+    border-bottom: 1px solid #ccc;
+} */
+
+/* NAVBAR */
+/* .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    border: 2px solid #999;
+    padding: 10px 20px;
+}
+.links span {
+    margin-left: 20px;
+    padding: 5px 15px;
+    border: 1px solid #999;
+} */
+
+/* HERO */
+/* .hero-box {
+    width: 250px;
+    margin: auto;
+    border: 2px solid #555;
+    padding: 20px;
+    text-align: center;
+}
+.btn {
+    padding: 10px 20px;
+    border: 2px solid #333;
+    background: none;
+} */
+
+/* TITLES */
+/* .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+} */
+
+/* GRID */
+/* .grid {
+    display: grid;
+    gap: 20px;
+}
+.grid-4 .grid { grid-template-columns: repeat(4, 1fr); }
+.grid-6 .grid { grid-template-columns: repeat(6, 1fr); }
+.grid-3 .grid { grid-template-columns: repeat(3, 1fr); }
+
+.card {
+    border: 1px dashed #555;
+    padding: 10px;
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    height: 80px;
+    background: #ddd;
+    margin-bottom: 10px;
+} */
+
+/* QUOTE SECTION */
+/* .quote-box {
+    border: 2px dashed #777;
+    padding: 20px;
+    text-align: center;
+} */
+
+/* TEXT GRID */
+/* .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.text-box {
+    border: 2px solid #777;
+    padding: 20px;
+} */
+
+/* FOOTER */
+/* .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.center-text {
+    text-align: center;
+    margin-top: 20px;
+} */
+
+
+
+/* --- 1. GLOBAL STYLES & VARIABLES --- */
+:root {
+    /* Define key colors from the screenshots */
+    --color-primary: #943ec3; /* Bright Purple Accent */
+    --color-dark-bg: #191924; /* Dark Section Background */
+    --color-text-light: #fff;
+    --color-text-dark: #000;
+    --color-text-grey: rgba(255, 255, 255, 0.7);
+    --font-stack: 'Montserrat', Arial, sans-serif;
+    --section-padding: 80px 40px;
+    --header-height: 60px;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-stack);
+    background: var(--color-text-light);
+    color: var(--color-text-dark);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Generic section container */
+.section {
+    padding: var(--section-padding);
+    /* Remove temporary border lines */
+    border-bottom: none; 
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-top: 30px;
+}
+
+.highlight {
+    color: var(--color-primary);
+}
+
+/* Dark section style (for membership and footer) */
+.dark-section {
+    background-color: var(--color-dark-bg);
+    color: var(--color-text-light);
+}
+
+/* --- 2. BUTTON STYLES --- */
+.btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    background: var(--color-primary);
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    letter-spacing: 1px;
+    /* Buttons are inline-block by default, which works, but ensuring they are not forced to block if a container needs them inline */
+}
+
+.btn:hover {
+    background-color: #a559d4; /* Slightly lighter purple */
+}
+
+.large-btn {
+    font-size: 1.1rem;
+}
+
+.cta-center {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+/* --- 3. NAVBAR STYLES --- */
+.nav {
+    display: flex; /* MANDATORY: Sets horizontal layout for logo and links */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: var(--header-height);
+    background-color: var(--color-text-light);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Updated logo to match the aesthetic */
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex; /* MANDATORY: To align the SVG icon and text horizontally */
+    align-items: center;
+    gap: 8px;
+    /* Remove temporary border/padding */
+    border: none;
+    padding: 0;
+}
+
+.smile-icon {
+    width: 30px;
+    height: 30px;
+    color: var(--color-primary);
+}
+
+.links {
+    display: flex; /* MANDATORY: To lay out the links horizontally */
+    gap: 30px;
+}
+
+.links a {
+    font-size: 0.9rem;
+    font-weight: 700;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    /* Anchor tags are inline by default */
+}
+
+.links a:hover {
+    opacity: 1;
+    color: var(--color-primary);
+}
+
+/* --- 4. HERO SECTION STYLES --- */
+.hero {
+    /* Placeholder image for the background */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1200x600/111111/FFFFFF?text=Smiling+Woman+Background');
+    background-size: cover;
+    background-position: center;
+    height: 60vh; /* Make it tall enough */
+    display: flex; /* MANDATORY: To center the content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-light);
+    padding-top: var(--header-height); /* Offset for fixed header if needed */
+}
+
+.hero-box {
+    text-align: center;
+    border: none;
+    padding: 20px;
+}
+
+.hero .title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero .sub-links {
+    display: flex; /* MANDATORY: To lay out the sub-links horizontally */
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.hero .sub-links a {
+    border: 1px solid var(--color-text-light);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    transition: background-color 0.3s;
+    /* Anchor tags are inline by default */
+}
+
+.hero .sub-links a:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.hero .section-subtitle {
+    color: var(--color-primary);
+    font-size: 1rem;
+    margin-top: 50px;
+}
+
+/* --- 5. EXPERTS GRID (CREW) STYLES --- */
+.crew {
+    padding-bottom: 20px;
+    padding-top: 0; /* Align with screenshot spacing */
+}
+
+.crew .grid {
+    display: grid; /* MANDATORY: Grid layout for 4 columns */
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.crew .card {
+    border: none;
+    padding: 10px;
+}
+
+.crew .img {
+    /* Make the images perfectly circular */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    background-size: cover;
+    background-position: center;
+    background-color: #ccc; /* Fallback */
+    /* This element is a div, which is block, but its container uses grid, so it's fine. */
+}
+
+.crew p {
+    margin: 5px 0;
+    font-weight: 700;
+}
+
+.crew .sub {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+
+/* --- 6. QUOTE SECTION STYLES --- */
+.quote {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding: var(--section-padding);
+}
+
+.quote-content {
+    display: flex; /* MANDATORY: Two-column layout for image and text */
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+    gap: 40px;
+}
+
+.quote-img {
+    /* Circular image for the quote author */
+    width: 180px;
+    height: 180px;
+    min-width: 180px; /* Prevent shrinking */
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+    border: 5px solid var(--color-text-light); /* White border around image */
+}
+
+.quote-text-box {
+    text-align: left;
+}
+
+.quote-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.quote .author {
+    font-weight: 700;
+    margin: 0;
+}
+
+.quote .sub {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* --- 7. TUTORIALS (VIDEO CARD) STYLES --- */
+.tutorials {
+    padding-top: 50px;
+}
+
+.tutorials .section-title {
+    margin-bottom: 30px;
+}
+
+.tutorials .grid-4 {
+    display: grid; /* MANDATORY: Grid layout for 4 video cards */
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.video-card {
+    border: none;
+    text-align: left;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.video-card .img {
+    /* For video thumbnail */
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.card-sub {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.author-row {
+    display: flex; /* MANDATORY: To align author image and name horizontally */
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.author-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.author-name {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.rating-row {
+    display: flex; /* MANDATORY: To align stars and duration text on opposite ends */
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.stars .star {
+    color: #ccc;
+    font-size: 1.1rem;
+    /* Span elements are inline by default, which is correct here */
+}
+
+.stars .filled {
+    color: var(--color-primary); /* Purple stars */
+}
+
+.duration {
+    color: var(--color-primary); /* Purple duration text */
+    font-weight: 700;
+}
+
+
+/* --- 8. MEMBERSHIP (DARK SECTION) STYLES --- */
+.membership {
+    text-align: center;
+}
+
+.membership .section-title {
+    color: var(--color-text-light);
+}
+
+.membership .grid-4 {
+    display: grid; /* MANDATORY: Grid layout for 4 membership boxes */
+    grid-template-columns: repeat(4, 1fr);
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.membership-box {
+    padding: 20px;
+}
+
+.membership-box .icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--color-primary); /* Purple smiley face icons */
+}
+
+.membership-box p {
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.membership-box .sub {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+
+/* --- 9. F.A.Q. SECTION STYLES --- */
+.faq {
+    padding-bottom: 80px;
+}
+
+.faq-grid {
+    display: grid; /* MANDATORY: Grid layout for two columns of FAQ items */
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+    margin: auto;
+}
+
+.faq-item {
+    padding: 10px;
+}
+
+.faq-question {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--color-dark-bg);
+}
+
+.faq-answer {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+/* --- 10. FOOTER STYLES --- */
+.footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.footer-row {
+    display: flex; /* MANDATORY: To align logo and social icons horizontally */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+.footer .logo {
+    color: var(--color-text-light);
+}
+
+.social-icons {
+    display: flex; /* MANDATORY: To align social icons horizontally */
+    gap: 15px;
+}
+
+.center-text {
+    font-size: 0.7rem;
+    opacity: 0.6;
+    margin-top: 30px;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+    .grid-4, .membership .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .quote-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .quote-img {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section {
+        padding: 40px 20px;
+    }
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .links {
+        margin-top: 15px;
+        gap: 20px;
+    }
+    .hero .title {
+        font-size: 2.5rem;
+    }
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    .grid-4, .membership .grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
