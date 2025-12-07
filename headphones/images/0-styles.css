@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: url('images/headphones_hero_1.jpg');
+    width: 100%;
+    height: 750px;
+    
+}
+
+nav{
+    display: flex;
+}
+
+img{
+    margin-left: 150px;
+
+}
+
+.left{
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.right{
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+ul{
+    display: flex;
+    text-decoration: none;
+    gap: 15px;
+    color: white;
+    margin-right: 150px;
+}
+
+li{
+    list-style: none;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #ffff;
+    height: 100%;
+    
+}
+
+.hero > p:first-of-type {
+    font-size: xx-large;
+}
+
+.hero > p:nth-of-type(2) {
+font-size: medium;
+
+}
+
+.hero button {
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background: #FF6565;
+    border: none;
+    color: #ffff;
+}
+
+.hero > p:nth-of-type(3){
+       
+    width: 50%;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.firstcontainer
+{
+   padding: 60px 0;
+   background: white;
+   text-align: center;
+}
+
+.top-text {
+    width: 45%;
+    margin: 0 auto 50px auto;
+    font-size: 16px;
+}
+
+.icon-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 20px;
+}
+
+.icon-row img {
+    width: 70px;
+}
+
+.text-row {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    
+}
+
+.text-row p {
+    width: 150px;
+}
+
+.figures{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/headphones_hero_2.jpg');
+    /* height: 700px; */
+min-height: 700px; /* or remove entirely */
+}
+
+.figures .text{
+    padding-top: 55px;
+    color: white;
+    width: 70%;
+    font-size: 30px;
+}
+
+
+.ok {
+    margin-top: 50px;
+}
+
+.pent-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.pent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.pent img {
+    width: 130px;
+}
+
+.container {
+    text-align: center;
+}
+
+.line {
+    width: 350px;
+    height: 1px;
+    background-color: #d3d3d3;
+    margin: 20px auto;
+    
+}
+
+.cta {
+    margin-top: 40px;
+    padding: 12px 30px;
+    background: #ff6b6b;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+footer {
+    background: #0a1829; /* dark navy */
+    padding: 60px 0 30px 0;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.footer-left img {
+    width: 150px;
+}
+
+.footer-right img {
+    width: 35px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.copyright {
+    margin-top: 40px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* ----------------------------------------------------
+   TABLET VIEW (max-width: 1024px)
+-----------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+
+    /* NAVIGATION */
+    ul {
+        gap: 25px;
+        margin-right: 80px;
+    }
+
+    img {
+        margin-left: 80px;
+    }
+
+    header {
+        height: 650px;
+        background-position: center;
+    }
+
+    .hero > p:first-of-type {
+        font-size: 26px;
+    }
+
+    .hero > p:nth-of-type(3) {
+        width: 70%;
+    }
+
+    /* FIRST SECTION */
+    .top-text {
+        width: 70%;
+    }
+
+    .icon-row {
+        gap: 50px;
+    }
+
+    .text-row {
+        gap: 70px;
+    }
+
+    /* FIGURES */
+    .figures .text {
+        width: 80%;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .pent-row {
+        gap: 50px;
+    }
+
+    .pent img {
+        width: 110px;
+    }
+
+    /* FOOTER */
+    .footer-content {
+        width: 90%;
+    }
+}
+
+
+/* ----------------------------------------------------
+   MOBILE VIEW (max-width: 600px)
+-----------------------------------------------------*/
+/* ------- MOBILE VIEW (max-width: 600px) ------- */
+@media (max-width: 600px) {
+
+  .container {
+    padding: 15px;
+  }
+
+  /* Main layout becomes one column */
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .left-block,
+  .right-block {
+    width: 100%;
+  }
+
+  /* Fix image responsiveness */
+  .left-block img,
+  .right-block img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Headings */
+  h1, h2, h3 {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  /* Text adjustments */
+  p, li {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  /* UL spacing fix */
+  ul {
+    margin-left: 18px;
+    margin-top: 8px;
+  }
+
+  /* Button / link wrappers */
+  .button-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button-row button,
+  .button-row a {
+    width: 100%;
+    text-align: center;
+  }
+
+
+}
